@@ -1,0 +1,48 @@
+//
+//  UIViewController+Utils.swift
+//  PruebaKlikin
+//
+//  Created by GonzaloMR on 19/2/24.
+//
+
+import UIKit
+
+extension UIViewController {
+    /// Inits and loads the view controller
+    /// - Returns: The view controller
+    static func initAndLoad() -> Self {
+        func instantiateFromNib<T: UIViewController>(_ viewType: T.Type) -> T {
+            let vController = T.init(nibName: String(describing: T.self), bundle: nil)
+
+            vController.modalPresentationStyle = .fullScreen
+
+            return vController
+        }
+
+        return instantiateFromNib(self)
+    }
+
+    /// Determines if a view controller is modal
+    /// - Returns: <code>True</code> if it is modal or <code>false</code> in other case
+    func isModal() -> Bool {
+        if let navigationController = self.navigationController {
+            if navigationController.viewControllers.first != self {
+                return false
+            }
+        }
+
+        if self.presentingViewController != nil {
+            return true
+        }
+
+        if self.navigationController?.presentingViewController?.presentedViewController == self.navigationController {
+            return true
+        }
+
+        if self.tabBarController?.presentingViewController is UITabBarController {
+            return true
+        }
+
+        return false
+    }
+}

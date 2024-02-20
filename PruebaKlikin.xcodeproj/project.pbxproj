@@ -26,6 +26,11 @@
 		9B249EF52B84CC4B0033F542 /* ShopCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B249EF32B84CC4B0033F542 /* ShopCell.swift */; };
 		9B249EF62B84CC4B0033F542 /* ShopCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9B249EF42B84CC4B0033F542 /* ShopCell.xib */; };
 		9B249EF82B84CE2E0033F542 /* UITableViewCell+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B249EF72B84CE2E0033F542 /* UITableViewCell+Utils.swift */; };
+		9B249EFB2B84D2B70033F542 /* CustomUIKitItems in Frameworks */ = {isa = PBXBuildFile; productRef = 9B249EFA2B84D2B70033F542 /* CustomUIKitItems */; };
+		9B249EFD2B84D45A0033F542 /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9B249EFC2B84D45A0033F542 /* Colors.xcassets */; };
+		9B249EFF2B84D7860033F542 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B249EFE2B84D7860033F542 /* Colors.swift */; };
+		9B249F012B84D81B0033F542 /* ImageDownloader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B249F002B84D81B0033F542 /* ImageDownloader.swift */; };
+		9B249F032B84D8410033F542 /* UIImageView+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B249F022B84D8410033F542 /* UIImageView+Utils.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -50,6 +55,10 @@
 		9B249EF32B84CC4B0033F542 /* ShopCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopCell.swift; sourceTree = "<group>"; };
 		9B249EF42B84CC4B0033F542 /* ShopCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ShopCell.xib; sourceTree = "<group>"; };
 		9B249EF72B84CE2E0033F542 /* UITableViewCell+Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableViewCell+Utils.swift"; sourceTree = "<group>"; };
+		9B249EFC2B84D45A0033F542 /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
+		9B249EFE2B84D7860033F542 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
+		9B249F002B84D81B0033F542 /* ImageDownloader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageDownloader.swift; sourceTree = "<group>"; };
+		9B249F022B84D8410033F542 /* UIImageView+Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+Utils.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +66,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9B249EFB2B84D2B70033F542 /* CustomUIKitItems in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -107,6 +117,8 @@
 			isa = PBXGroup;
 			children = (
 				9B249ED02B836ECA0033F542 /* Extensions */,
+				9B249EFE2B84D7860033F542 /* Colors.swift */,
+				9B249F002B84D81B0033F542 /* ImageDownloader.swift */,
 			);
 			path = Util;
 			sourceTree = "<group>";
@@ -117,6 +129,7 @@
 				9B249ED12B836EDC0033F542 /* UIApplication+Utils.swift */,
 				9B249ED32B836EEB0033F542 /* UIViewController+Utils.swift */,
 				9B249EF72B84CE2E0033F542 /* UITableViewCell+Utils.swift */,
+				9B249F022B84D8410033F542 /* UIImageView+Utils.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -141,6 +154,7 @@
 			isa = PBXGroup;
 			children = (
 				9B249EC12B836E3C0033F542 /* Assets.xcassets */,
+				9B249EFC2B84D45A0033F542 /* Colors.xcassets */,
 			);
 			path = SupportingFiles;
 			sourceTree = "<group>";
@@ -218,6 +232,9 @@
 			dependencies = (
 			);
 			name = PruebaKlikin;
+			packageProductDependencies = (
+				9B249EFA2B84D2B70033F542 /* CustomUIKitItems */,
+			);
 			productName = PruebaKlikin;
 			productReference = 9B249EB52B836E3B0033F542 /* PruebaKlikin.app */;
 			productType = "com.apple.product-type.application";
@@ -246,6 +263,9 @@
 				Base,
 			);
 			mainGroup = 9B249EAC2B836E3B0033F542;
+			packageReferences = (
+				9B249EF92B84D2B70033F542 /* XCRemoteSwiftPackageReference "CustomUIKitItems" */,
+			);
 			productRefGroup = 9B249EB62B836E3B0033F542 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -260,6 +280,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9B249EFD2B84D45A0033F542 /* Colors.xcassets in Resources */,
 				9B249EC52B836E3C0033F542 /* LaunchScreen.storyboard in Resources */,
 				9B249ED92B836F8D0033F542 /* ShopsListViewController.xib in Resources */,
 				9B249EC22B836E3C0033F542 /* Assets.xcassets in Resources */,
@@ -283,11 +304,14 @@
 				9B249EE42B8374BB0033F542 /* NetworkManager.swift in Sources */,
 				9B249ECE2B836E6B0033F542 /* CustomNavigationController.swift in Sources */,
 				9B249EE82B8374E20033F542 /* NetworkClient.swift in Sources */,
+				9B249EFF2B84D7860033F542 /* Colors.swift in Sources */,
+				9B249F012B84D81B0033F542 /* ImageDownloader.swift in Sources */,
 				9B249EF52B84CC4B0033F542 /* ShopCell.swift in Sources */,
 				9B249EB92B836E3B0033F542 /* AppDelegate.swift in Sources */,
 				9B249EE62B8374CE0033F542 /* Reachability.swift in Sources */,
 				9B249EF12B8384FF0033F542 /* ShopsListViewModel.swift in Sources */,
 				9B249ED82B836F8D0033F542 /* ShopsListViewController.swift in Sources */,
+				9B249F032B84D8410033F542 /* UIImageView+Utils.swift in Sources */,
 				9B249EF82B84CE2E0033F542 /* UITableViewCell+Utils.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -509,6 +533,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		9B249EF92B84D2B70033F542 /* XCRemoteSwiftPackageReference "CustomUIKitItems" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Gonzalo-MR8/CustomUIKitItems.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		9B249EFA2B84D2B70033F542 /* CustomUIKitItems */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9B249EF92B84D2B70033F542 /* XCRemoteSwiftPackageReference "CustomUIKitItems" */;
+			productName = CustomUIKitItems;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 9B249EAD2B836E3B0033F542 /* Project object */;
 }

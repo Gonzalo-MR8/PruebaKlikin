@@ -47,7 +47,7 @@ extension ShopsListViewController: UITableViewDataSource {
 
     guard let cell = tableView.dequeueReusableCell(withIdentifier: ShopCell.identifier) as? ShopCell else { return UITableViewCell() }
 
-    cell.configure(title: shop.name)
+    cell.configure(shop: shop)
 
     return cell
   }

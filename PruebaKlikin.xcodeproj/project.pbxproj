@@ -15,6 +15,17 @@
 		9B249ED42B836EEB0033F542 /* UIViewController+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B249ED32B836EEB0033F542 /* UIViewController+Utils.swift */; };
 		9B249ED82B836F8D0033F542 /* ShopsListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B249ED62B836F8D0033F542 /* ShopsListViewController.swift */; };
 		9B249ED92B836F8D0033F542 /* ShopsListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9B249ED72B836F8D0033F542 /* ShopsListViewController.xib */; };
+		9B249EE22B83748E0033F542 /* EndPointProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B249EE12B83748E0033F542 /* EndPointProtocol.swift */; };
+		9B249EE42B8374BB0033F542 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B249EE32B8374BB0033F542 /* NetworkManager.swift */; };
+		9B249EE62B8374CE0033F542 /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B249EE52B8374CE0033F542 /* Reachability.swift */; };
+		9B249EE82B8374E20033F542 /* NetworkClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B249EE72B8374E20033F542 /* NetworkClient.swift */; };
+		9B249EEA2B8383E60033F542 /* Shop.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B249EE92B8383E60033F542 /* Shop.swift */; };
+		9B249EEC2B8384030033F542 /* ShopsEndPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B249EEB2B8384030033F542 /* ShopsEndPoint.swift */; };
+		9B249EEE2B83847A0033F542 /* ShopsServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B249EED2B83847A0033F542 /* ShopsServices.swift */; };
+		9B249EF12B8384FF0033F542 /* ShopsListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B249EF02B8384FF0033F542 /* ShopsListViewModel.swift */; };
+		9B249EF52B84CC4B0033F542 /* ShopCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B249EF32B84CC4B0033F542 /* ShopCell.swift */; };
+		9B249EF62B84CC4B0033F542 /* ShopCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9B249EF42B84CC4B0033F542 /* ShopCell.xib */; };
+		9B249EF82B84CE2E0033F542 /* UITableViewCell+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B249EF72B84CE2E0033F542 /* UITableViewCell+Utils.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +39,17 @@
 		9B249ED32B836EEB0033F542 /* UIViewController+Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Utils.swift"; sourceTree = "<group>"; };
 		9B249ED62B836F8D0033F542 /* ShopsListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopsListViewController.swift; sourceTree = "<group>"; };
 		9B249ED72B836F8D0033F542 /* ShopsListViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ShopsListViewController.xib; sourceTree = "<group>"; };
+		9B249EE12B83748E0033F542 /* EndPointProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndPointProtocol.swift; sourceTree = "<group>"; };
+		9B249EE32B8374BB0033F542 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		9B249EE52B8374CE0033F542 /* Reachability.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reachability.swift; sourceTree = "<group>"; };
+		9B249EE72B8374E20033F542 /* NetworkClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkClient.swift; sourceTree = "<group>"; };
+		9B249EE92B8383E60033F542 /* Shop.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Shop.swift; sourceTree = "<group>"; };
+		9B249EEB2B8384030033F542 /* ShopsEndPoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopsEndPoint.swift; sourceTree = "<group>"; };
+		9B249EED2B83847A0033F542 /* ShopsServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopsServices.swift; sourceTree = "<group>"; };
+		9B249EF02B8384FF0033F542 /* ShopsListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopsListViewModel.swift; sourceTree = "<group>"; };
+		9B249EF32B84CC4B0033F542 /* ShopCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopCell.swift; sourceTree = "<group>"; };
+		9B249EF42B84CC4B0033F542 /* ShopCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ShopCell.xib; sourceTree = "<group>"; };
+		9B249EF72B84CE2E0033F542 /* UITableViewCell+Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableViewCell+Utils.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,9 +83,11 @@
 			isa = PBXGroup;
 			children = (
 				9B249ECC2B836E5D0033F542 /* Base */,
+				9B249EDA2B8373CB0033F542 /* Model */,
+				9B249EDC2B8373F30033F542 /* Provider */,
+				9B249EDB2B8373E50033F542 /* SupportingFiles */,
 				9B249ED52B836F690033F542 /* UseCases */,
 				9B249ECF2B836EBC0033F542 /* Util */,
-				9B249EC12B836E3C0033F542 /* Assets.xcassets */,
 				9B249EC62B836E3C0033F542 /* Info.plist */,
 			);
 			path = PruebaKlikin;
@@ -92,6 +116,7 @@
 			children = (
 				9B249ED12B836EDC0033F542 /* UIApplication+Utils.swift */,
 				9B249ED32B836EEB0033F542 /* UIViewController+Utils.swift */,
+				9B249EF72B84CE2E0033F542 /* UITableViewCell+Utils.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -99,10 +124,82 @@
 		9B249ED52B836F690033F542 /* UseCases */ = {
 			isa = PBXGroup;
 			children = (
+				9B249EEF2B8384E50033F542 /* ShopsList */,
+			);
+			path = UseCases;
+			sourceTree = "<group>";
+		};
+		9B249EDA2B8373CB0033F542 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				9B249EE92B8383E60033F542 /* Shop.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		9B249EDB2B8373E50033F542 /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
+				9B249EC12B836E3C0033F542 /* Assets.xcassets */,
+			);
+			path = SupportingFiles;
+			sourceTree = "<group>";
+		};
+		9B249EDC2B8373F30033F542 /* Provider */ = {
+			isa = PBXGroup;
+			children = (
+				9B249EE02B8374530033F542 /* EndPoints */,
+				9B249EDE2B8374460033F542 /* Services */,
+				9B249EDD2B83743A0033F542 /* Network */,
+			);
+			path = Provider;
+			sourceTree = "<group>";
+		};
+		9B249EDD2B83743A0033F542 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				9B249EE72B8374E20033F542 /* NetworkClient.swift */,
+				9B249EE32B8374BB0033F542 /* NetworkManager.swift */,
+				9B249EE52B8374CE0033F542 /* Reachability.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		9B249EDE2B8374460033F542 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				9B249EED2B83847A0033F542 /* ShopsServices.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		9B249EE02B8374530033F542 /* EndPoints */ = {
+			isa = PBXGroup;
+			children = (
+				9B249EE12B83748E0033F542 /* EndPointProtocol.swift */,
+				9B249EEB2B8384030033F542 /* ShopsEndPoint.swift */,
+			);
+			path = EndPoints;
+			sourceTree = "<group>";
+		};
+		9B249EEF2B8384E50033F542 /* ShopsList */ = {
+			isa = PBXGroup;
+			children = (
+				9B249EF22B84CC2C0033F542 /* Cells */,
+				9B249EF02B8384FF0033F542 /* ShopsListViewModel.swift */,
 				9B249ED62B836F8D0033F542 /* ShopsListViewController.swift */,
 				9B249ED72B836F8D0033F542 /* ShopsListViewController.xib */,
 			);
-			path = UseCases;
+			path = ShopsList;
+			sourceTree = "<group>";
+		};
+		9B249EF22B84CC2C0033F542 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				9B249EF32B84CC4B0033F542 /* ShopCell.swift */,
+				9B249EF42B84CC4B0033F542 /* ShopCell.xib */,
+			);
+			path = Cells;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -166,6 +263,7 @@
 				9B249EC52B836E3C0033F542 /* LaunchScreen.storyboard in Resources */,
 				9B249ED92B836F8D0033F542 /* ShopsListViewController.xib in Resources */,
 				9B249EC22B836E3C0033F542 /* Assets.xcassets in Resources */,
+				9B249EF62B84CC4B0033F542 /* ShopCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -178,9 +276,19 @@
 			files = (
 				9B249ED42B836EEB0033F542 /* UIViewController+Utils.swift in Sources */,
 				9B249ED22B836EDC0033F542 /* UIApplication+Utils.swift in Sources */,
+				9B249EE22B83748E0033F542 /* EndPointProtocol.swift in Sources */,
+				9B249EEE2B83847A0033F542 /* ShopsServices.swift in Sources */,
+				9B249EEA2B8383E60033F542 /* Shop.swift in Sources */,
+				9B249EEC2B8384030033F542 /* ShopsEndPoint.swift in Sources */,
+				9B249EE42B8374BB0033F542 /* NetworkManager.swift in Sources */,
 				9B249ECE2B836E6B0033F542 /* CustomNavigationController.swift in Sources */,
+				9B249EE82B8374E20033F542 /* NetworkClient.swift in Sources */,
+				9B249EF52B84CC4B0033F542 /* ShopCell.swift in Sources */,
 				9B249EB92B836E3B0033F542 /* AppDelegate.swift in Sources */,
+				9B249EE62B8374CE0033F542 /* Reachability.swift in Sources */,
+				9B249EF12B8384FF0033F542 /* ShopsListViewModel.swift in Sources */,
 				9B249ED82B836F8D0033F542 /* ShopsListViewController.swift in Sources */,
+				9B249EF82B84CE2E0033F542 /* UITableViewCell+Utils.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -9,19 +9,37 @@ import Foundation
 
 final class ShopsListViewModel {
 
-    private var shops: Shops
-    private let services: ShopsServiceable
+  private var allShops: Shops
+  private var filteredShops: Shops
+  private let services: ShopsServiceable
+  private var selectedCategory: Category?
 
-    init() {
-      shops = []
-      self.services = ShopsServices()
-    }
+  init() {
+    allShops = []
+    filteredShops = []
+    self.services = ShopsServices()
+  }
 
-    func getShops() -> Shops {
-        return shops
-    }
+  func getShops() -> Shops {
+    filteredShops
+  }
 
-    func callShops() async throws {
-      shops = try await services.getShops()
+  func categorySelected(category: Category) {
+    if selectedCategory == category {
+      selectedCategory = nil
+      filteredShops = allShops
+    } else {
+      selectedCategory = category
+      filteredShops = allShops.filter({ $0.category == category })
     }
+  }
+
+  func getSelectedCategory() -> Category? {
+    selectedCategory
+  }
+
+  func callShops() async throws {
+    allShops = try await services.getShops()
+    filteredShops = allShops
+  }
 }

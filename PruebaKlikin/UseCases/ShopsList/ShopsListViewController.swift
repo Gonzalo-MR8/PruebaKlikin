@@ -9,7 +9,10 @@ import UIKit
 
 class ShopsListViewController: UIViewController {
 
-  @IBOutlet weak var tableView: UITableView!
+  @IBOutlet private weak var collectionView: UICollectionView!
+  @IBOutlet private weak var tableView: UITableView!
+
+  private let kCategories: [Category] = [.gasStation, .food, .leisure, .beauty, .directSales, .electricStation, .shopping]
 
   private var viewModel: ShopsListViewModel!
 
@@ -18,7 +21,7 @@ class ShopsListViewController: UIViewController {
 
     self.viewModel = ShopsListViewModel()
 
-    configureTable()
+    configureTableAndCollectionViews()
 
     Task {
       do {
@@ -30,8 +33,45 @@ class ShopsListViewController: UIViewController {
     }
   }
 
-  private func configureTable() {
+  private func configureTableAndCollectionViews() {
+    collectionView.register(CategoryCell.nib, forCellWithReuseIdentifier: CategoryCell.identifier)
     tableView.register(ShopCell.nib, forCellReuseIdentifier: ShopCell.identifier)
+  }
+}
+
+// MARK: - UICollectionViewDataSource
+
+extension ShopsListViewController: UICollectionViewDataSource {
+  func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+    kCategories.count
+  }
+
+  func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+    let category = kCategories[indexPath.row]
+
+    guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: CategoryCell.identifier, for: indexPath) as? CategoryCell else { return UICollectionViewCell() }
+
+    cell.configure(category: category, isSelected: category == viewModel.getSelectedCategory() ? true : false)
+
+    return cell
+  }
+}
+
+// MARK: - UICollectionViewDelegate
+
+extension ShopsListViewController: UICollectionViewDelegate {
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+      viewModel.categorySelected(category: kCategories[indexPath.row])
+      tableView.reloadData()
+      collectionView.reloadData()
+    }
+}
+
+// MARK: - UICollectionViewDelegateFlowLayout
+
+extension ShopsListViewController: UICollectionViewDelegateFlowLayout {
+  func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+    CGSize(width: collectionView.frame.width / 2.5, height: 66)
   }
 }
 

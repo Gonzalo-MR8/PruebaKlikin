@@ -12,7 +12,10 @@ enum Colors: String {
   case white100
   case orange100
   case blue100
+  case blue20
   case yellow100
+  case darkBlue100
+  case background100
 }
 
 extension Colors {

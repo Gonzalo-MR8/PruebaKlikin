@@ -31,6 +31,9 @@
 		9B249EFF2B84D7860033F542 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B249EFE2B84D7860033F542 /* Colors.swift */; };
 		9B249F012B84D81B0033F542 /* ImageDownloader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B249F002B84D81B0033F542 /* ImageDownloader.swift */; };
 		9B249F032B84D8410033F542 /* UIImageView+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B249F022B84D8410033F542 /* UIImageView+Utils.swift */; };
+		9B249F082B86221D0033F542 /* CategoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B249F062B86221D0033F542 /* CategoryCell.swift */; };
+		9B249F092B86221D0033F542 /* CategoryCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9B249F072B86221D0033F542 /* CategoryCell.xib */; };
+		9B249F0B2B86230E0033F542 /* UICollectionViewCell+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B249F0A2B86230E0033F542 /* UICollectionViewCell+Utils.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -59,6 +62,9 @@
 		9B249EFE2B84D7860033F542 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
 		9B249F002B84D81B0033F542 /* ImageDownloader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageDownloader.swift; sourceTree = "<group>"; };
 		9B249F022B84D8410033F542 /* UIImageView+Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+Utils.swift"; sourceTree = "<group>"; };
+		9B249F062B86221D0033F542 /* CategoryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryCell.swift; sourceTree = "<group>"; };
+		9B249F072B86221D0033F542 /* CategoryCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CategoryCell.xib; sourceTree = "<group>"; };
+		9B249F0A2B86230E0033F542 /* UICollectionViewCell+Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UICollectionViewCell+Utils.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -130,6 +136,7 @@
 				9B249ED32B836EEB0033F542 /* UIViewController+Utils.swift */,
 				9B249EF72B84CE2E0033F542 /* UITableViewCell+Utils.swift */,
 				9B249F022B84D8410033F542 /* UIImageView+Utils.swift */,
+				9B249F0A2B86230E0033F542 /* UICollectionViewCell+Utils.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -212,6 +219,8 @@
 			children = (
 				9B249EF32B84CC4B0033F542 /* ShopCell.swift */,
 				9B249EF42B84CC4B0033F542 /* ShopCell.xib */,
+				9B249F062B86221D0033F542 /* CategoryCell.swift */,
+				9B249F072B86221D0033F542 /* CategoryCell.xib */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -281,6 +290,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9B249EFD2B84D45A0033F542 /* Colors.xcassets in Resources */,
+				9B249F092B86221D0033F542 /* CategoryCell.xib in Resources */,
 				9B249EC52B836E3C0033F542 /* LaunchScreen.storyboard in Resources */,
 				9B249ED92B836F8D0033F542 /* ShopsListViewController.xib in Resources */,
 				9B249EC22B836E3C0033F542 /* Assets.xcassets in Resources */,
@@ -296,8 +306,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				9B249ED42B836EEB0033F542 /* UIViewController+Utils.swift in Sources */,
+				9B249F082B86221D0033F542 /* CategoryCell.swift in Sources */,
 				9B249ED22B836EDC0033F542 /* UIApplication+Utils.swift in Sources */,
 				9B249EE22B83748E0033F542 /* EndPointProtocol.swift in Sources */,
+				9B249F0B2B86230E0033F542 /* UICollectionViewCell+Utils.swift in Sources */,
 				9B249EEE2B83847A0033F542 /* ShopsServices.swift in Sources */,
 				9B249EEA2B8383E60033F542 /* Shop.swift in Sources */,
 				9B249EEC2B8384030033F542 /* ShopsEndPoint.swift in Sources */,

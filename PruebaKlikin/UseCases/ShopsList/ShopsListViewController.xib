@@ -11,6 +11,9 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ShopsListViewController" customModule="PruebaKlikin" customModuleProvider="target">
             <connections>
                 <outlet property="collectionView" destination="MXi-tW-IY4" id="0zx-0G-EOt"/>
+                <outlet property="labelDistance" destination="f5b-qi-1oD" id="Q6p-Nk-3hc"/>
+                <outlet property="labelNumberOfShops" destination="ZQQ-0G-HHO" id="l37-VB-zVg"/>
+                <outlet property="labelNumberOfShopsOrderPerDistance" destination="cmO-JH-6fV" id="Hvd-Rq-cUy"/>
                 <outlet property="tableView" destination="BhP-Td-FdL" id="xj5-w4-nFv"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>

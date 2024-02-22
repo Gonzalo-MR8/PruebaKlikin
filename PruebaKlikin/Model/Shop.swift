@@ -15,9 +15,39 @@ struct Shop: Codable {
   let name: String
   let category: Category
   let cashback: Double
-  let location: [Double]
+  let location: Location
   let openingHours: String
   let address: Address
+
+  private enum CodingKeys: String,CodingKey {
+    case photo
+    case name
+    case category
+    case cashback
+    case location
+    case openingHours
+    case address
+  }
+
+  init(from decoder: Decoder) throws {
+    let container = try decoder.container(keyedBy: CodingKeys.self)
+
+    photo = try container.decode(String.self, forKey: .photo)
+    name = try container.decode(String.self, forKey: .name)
+    category = try container.decode(Category.self, forKey: .category)
+    cashback = try container.decode(Double.self, forKey: .cashback)
+
+    let locationInit = try container.decode([Double].self, forKey: .location)
+
+    if let latitude = locationInit.first, let longitude = locationInit.last {
+      location = Location(latitude: latitude, longitude: longitude)
+    } else {
+      throw DecodingError.dataCorruptedError(forKey: .location, in: container,debugDescription: "Location data does not match format expected by formatter.")
+    }
+
+    openingHours = try container.decode(String.self, forKey: .openingHours)
+    address = try container.decode(Address.self, forKey: .address)
+  }
 }
 
 // MARK: - Address

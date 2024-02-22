@@ -34,6 +34,10 @@
 		9B249F082B86221D0033F542 /* CategoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B249F062B86221D0033F542 /* CategoryCell.swift */; };
 		9B249F092B86221D0033F542 /* CategoryCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9B249F072B86221D0033F542 /* CategoryCell.xib */; };
 		9B249F0B2B86230E0033F542 /* UICollectionViewCell+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B249F0A2B86230E0033F542 /* UICollectionViewCell+Utils.swift */; };
+		9B249F0D2B8671290033F542 /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B249F0C2B8671290033F542 /* Location.swift */; };
+		9B249F0F2B8671E50033F542 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B249F0E2B8671E50033F542 /* LocationManager.swift */; };
+		9B249F112B86756A0033F542 /* UserDefaults+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B249F102B86756A0033F542 /* UserDefaults+Utils.swift */; };
+		9B249F132B86758E0033F542 /* UserDefaultsValues.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B249F122B86758E0033F542 /* UserDefaultsValues.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -65,6 +69,10 @@
 		9B249F062B86221D0033F542 /* CategoryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryCell.swift; sourceTree = "<group>"; };
 		9B249F072B86221D0033F542 /* CategoryCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CategoryCell.xib; sourceTree = "<group>"; };
 		9B249F0A2B86230E0033F542 /* UICollectionViewCell+Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UICollectionViewCell+Utils.swift"; sourceTree = "<group>"; };
+		9B249F0C2B8671290033F542 /* Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
+		9B249F0E2B8671E50033F542 /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
+		9B249F102B86756A0033F542 /* UserDefaults+Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UserDefaults+Utils.swift"; sourceTree = "<group>"; };
+		9B249F122B86758E0033F542 /* UserDefaultsValues.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsValues.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -125,6 +133,8 @@
 				9B249ED02B836ECA0033F542 /* Extensions */,
 				9B249EFE2B84D7860033F542 /* Colors.swift */,
 				9B249F002B84D81B0033F542 /* ImageDownloader.swift */,
+				9B249F0E2B8671E50033F542 /* LocationManager.swift */,
+				9B249F102B86756A0033F542 /* UserDefaults+Utils.swift */,
 			);
 			path = Util;
 			sourceTree = "<group>";
@@ -153,6 +163,7 @@
 			isa = PBXGroup;
 			children = (
 				9B249EE92B8383E60033F542 /* Shop.swift */,
+				9B249F0C2B8671290033F542 /* Location.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -172,6 +183,7 @@
 				9B249EE02B8374530033F542 /* EndPoints */,
 				9B249EDE2B8374460033F542 /* Services */,
 				9B249EDD2B83743A0033F542 /* Network */,
+				9B249F122B86758E0033F542 /* UserDefaultsValues.swift */,
 			);
 			path = Provider;
 			sourceTree = "<group>";
@@ -315,9 +327,13 @@
 				9B249EEC2B8384030033F542 /* ShopsEndPoint.swift in Sources */,
 				9B249EE42B8374BB0033F542 /* NetworkManager.swift in Sources */,
 				9B249ECE2B836E6B0033F542 /* CustomNavigationController.swift in Sources */,
+				9B249F132B86758E0033F542 /* UserDefaultsValues.swift in Sources */,
 				9B249EE82B8374E20033F542 /* NetworkClient.swift in Sources */,
 				9B249EFF2B84D7860033F542 /* Colors.swift in Sources */,
 				9B249F012B84D81B0033F542 /* ImageDownloader.swift in Sources */,
+				9B249F112B86756A0033F542 /* UserDefaults+Utils.swift in Sources */,
+				9B249F0D2B8671290033F542 /* Location.swift in Sources */,
+				9B249F0F2B8671E50033F542 /* LocationManager.swift in Sources */,
 				9B249EF52B84CC4B0033F542 /* ShopCell.swift in Sources */,
 				9B249EB92B836E3B0033F542 /* AppDelegate.swift in Sources */,
 				9B249EE62B8374CE0033F542 /* Reachability.swift in Sources */,

@@ -9,6 +9,9 @@ import UIKit
 
 class ShopsListViewController: UIViewController {
 
+  @IBOutlet private weak var labelNumberOfShops: UILabel!
+  @IBOutlet private weak var labelNumberOfShopsOrderPerDistance: UILabel!
+  @IBOutlet private weak var labelDistance: UILabel!
   @IBOutlet private weak var collectionView: UICollectionView!
   @IBOutlet private weak var tableView: UITableView!
 
@@ -27,10 +30,13 @@ class ShopsListViewController: UIViewController {
       do {
         try await self.viewModel.callShops()
         tableView.reloadData()
+        labelNumberOfShops.text = viewModel.getShops().count.description
       } catch {
         CustomNavigationController.instance.showAlertView(title: "Error", message: "Ha ocurrido un error inesperado", buttonText: "Vale")
       }
     }
+
+    LocationManager.shared.requestLocationPermission()
   }
 
   private func configureTableAndCollectionViews() {
@@ -64,6 +70,7 @@ extension ShopsListViewController: UICollectionViewDelegate {
       viewModel.categorySelected(category: kCategories[indexPath.row])
       tableView.reloadData()
       collectionView.reloadData()
+      labelNumberOfShops.text = viewModel.getShops().count.description
     }
 }
 

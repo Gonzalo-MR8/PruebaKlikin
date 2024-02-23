@@ -22,6 +22,8 @@ class ShopsListViewController: UIViewController {
   override func viewDidLoad() {
     super.viewDidLoad()
 
+    CustomNavigationController.instance.showHudView()
+
     self.viewModel = ShopsListViewModel()
 
     configureTableAndCollectionViews()
@@ -31,8 +33,10 @@ class ShopsListViewController: UIViewController {
         try await self.viewModel.callShops()
         tableView.reloadData()
         labelNumberOfShops.text = viewModel.getShops().count.description
+        CustomNavigationController.instance.closeHudView()
       } catch {
         CustomNavigationController.instance.showAlertView(title: "Error", message: "Ha ocurrido un error inesperado", buttonText: "Vale")
+        CustomNavigationController.instance.closeHudView()
       }
     }
 
@@ -91,10 +95,21 @@ extension ShopsListViewController: UITableViewDataSource {
 
   func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
     let shop: Shop = viewModel.getShops()[indexPath.row]
-
+    let distance = shop.location.location.distance(from: LocationManager.shared.lastUserLocation)
+    
     guard let cell = tableView.dequeueReusableCell(withIdentifier: ShopCell.identifier) as? ShopCell else { return UITableViewCell() }
 
-    cell.configure(shop: shop)
+    cell.configure(shop: shop, distance: distance)
+
+    if distance < 1000 {
+      labelDistance.text = "A menos de 1 km"
+      labelNumberOfShopsOrderPerDistance.text = viewModel.getNumberOfShopsPerDistance(distance: 1).description
+    } else {
+      let distanceKm = distance / 1000
+      let rounderKm = Int(ceil(distanceKm))
+      labelNumberOfShopsOrderPerDistance.text = viewModel.getNumberOfShopsPerDistance(distance: rounderKm).description
+      labelDistance.text = "A menos de \(rounderKm) km"
+    }
 
     return cell
   }

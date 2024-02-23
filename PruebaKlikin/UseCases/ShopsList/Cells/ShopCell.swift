@@ -7,19 +7,28 @@
 
 import UIKit
 import CustomUIKitItems
+import CoreLocation
 
 class ShopCell: UITableViewCell {
 
   @IBOutlet private weak var viewHeader: CIView!
   @IBOutlet private weak var imageViewCategory: UIImageView!
+  @IBOutlet private weak var labelDistanceToUser: UILabel!
   @IBOutlet private weak var imageViewShop: CIImageView!
   @IBOutlet private weak var labelTitle: UILabel!
   @IBOutlet private weak var labelOpeningHours: UILabel!
 
-  func configure(shop: Shop) {
+  func configure(shop: Shop, distance: CLLocationDistance) {
     imageViewShop.setImage(with: shop.photo)
     labelTitle.text = shop.name
     labelOpeningHours.text = shop.openingHours
+
+    if distance < 1000 {
+      labelDistanceToUser.text = "\(Int(distance)) m"
+    } else {
+      let distanceKm = distance / 1000
+      labelDistanceToUser.text = "\(distanceKm.rounded(toPlaces: 1)) km"
+    }
 
     switch shop.category {
     case .beauty:

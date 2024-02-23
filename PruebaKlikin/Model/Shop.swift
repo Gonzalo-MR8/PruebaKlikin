@@ -39,7 +39,7 @@ struct Shop: Codable {
 
     let locationInit = try container.decode([Double].self, forKey: .location)
 
-    if let latitude = locationInit.first, let longitude = locationInit.last {
+    if let latitude = locationInit.last, let longitude = locationInit.first {
       location = Location(latitude: latitude, longitude: longitude)
     } else {
       throw DecodingError.dataCorruptedError(forKey: .location, in: container,debugDescription: "Location data does not match format expected by formatter.")

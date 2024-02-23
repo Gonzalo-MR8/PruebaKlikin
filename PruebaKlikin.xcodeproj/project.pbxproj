@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9B1EE1402B882B4200C89DB0 /* HudView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B1EE13F2B882B4200C89DB0 /* HudView.swift */; };
+		9B1EE1422B882B4E00C89DB0 /* HudView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9B1EE1412B882B4E00C89DB0 /* HudView.xib */; };
+		9B1EE1442B882BF500C89DB0 /* UIView+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B1EE1432B882BF500C89DB0 /* UIView+Utils.swift */; };
 		9B249EB92B836E3B0033F542 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B249EB82B836E3B0033F542 /* AppDelegate.swift */; };
 		9B249EC22B836E3C0033F542 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9B249EC12B836E3C0033F542 /* Assets.xcassets */; };
 		9B249EC52B836E3C0033F542 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9B249EC32B836E3C0033F542 /* LaunchScreen.storyboard */; };
@@ -38,9 +41,13 @@
 		9B249F0F2B8671E50033F542 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B249F0E2B8671E50033F542 /* LocationManager.swift */; };
 		9B249F112B86756A0033F542 /* UserDefaults+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B249F102B86756A0033F542 /* UserDefaults+Utils.swift */; };
 		9B249F132B86758E0033F542 /* UserDefaultsValues.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B249F122B86758E0033F542 /* UserDefaultsValues.swift */; };
+		9B249F152B87FA2E0033F542 /* Double+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B249F142B87FA2E0033F542 /* Double+Utils.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		9B1EE13F2B882B4200C89DB0 /* HudView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HudView.swift; sourceTree = "<group>"; };
+		9B1EE1412B882B4E00C89DB0 /* HudView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HudView.xib; sourceTree = "<group>"; };
+		9B1EE1432B882BF500C89DB0 /* UIView+Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Utils.swift"; sourceTree = "<group>"; };
 		9B249EB52B836E3B0033F542 /* PruebaKlikin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PruebaKlikin.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9B249EB82B836E3B0033F542 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9B249EC12B836E3C0033F542 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -73,6 +80,7 @@
 		9B249F0E2B8671E50033F542 /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
 		9B249F102B86756A0033F542 /* UserDefaults+Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UserDefaults+Utils.swift"; sourceTree = "<group>"; };
 		9B249F122B86758E0033F542 /* UserDefaultsValues.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsValues.swift; sourceTree = "<group>"; };
+		9B249F142B87FA2E0033F542 /* Double+Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Double+Utils.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,6 +95,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9B1EE13A2B882A5E00C89DB0 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				9B1EE13F2B882B4200C89DB0 /* HudView.swift */,
+				9B1EE1412B882B4E00C89DB0 /* HudView.xib */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
 		9B249EAC2B836E3B0033F542 = {
 			isa = PBXGroup;
 			children = (
@@ -147,6 +164,8 @@
 				9B249EF72B84CE2E0033F542 /* UITableViewCell+Utils.swift */,
 				9B249F022B84D8410033F542 /* UIImageView+Utils.swift */,
 				9B249F0A2B86230E0033F542 /* UICollectionViewCell+Utils.swift */,
+				9B249F142B87FA2E0033F542 /* Double+Utils.swift */,
+				9B1EE1432B882BF500C89DB0 /* UIView+Utils.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -154,6 +173,7 @@
 		9B249ED52B836F690033F542 /* UseCases */ = {
 			isa = PBXGroup;
 			children = (
+				9B1EE13A2B882A5E00C89DB0 /* Common */,
 				9B249EEF2B8384E50033F542 /* ShopsList */,
 			);
 			path = UseCases;
@@ -301,6 +321,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9B1EE1422B882B4E00C89DB0 /* HudView.xib in Resources */,
 				9B249EFD2B84D45A0033F542 /* Colors.xcassets in Resources */,
 				9B249F092B86221D0033F542 /* CategoryCell.xib in Resources */,
 				9B249EC52B836E3C0033F542 /* LaunchScreen.storyboard in Resources */,
@@ -319,6 +340,7 @@
 			files = (
 				9B249ED42B836EEB0033F542 /* UIViewController+Utils.swift in Sources */,
 				9B249F082B86221D0033F542 /* CategoryCell.swift in Sources */,
+				9B1EE1442B882BF500C89DB0 /* UIView+Utils.swift in Sources */,
 				9B249ED22B836EDC0033F542 /* UIApplication+Utils.swift in Sources */,
 				9B249EE22B83748E0033F542 /* EndPointProtocol.swift in Sources */,
 				9B249F0B2B86230E0033F542 /* UICollectionViewCell+Utils.swift in Sources */,
@@ -336,11 +358,13 @@
 				9B249F0F2B8671E50033F542 /* LocationManager.swift in Sources */,
 				9B249EF52B84CC4B0033F542 /* ShopCell.swift in Sources */,
 				9B249EB92B836E3B0033F542 /* AppDelegate.swift in Sources */,
+				9B249F152B87FA2E0033F542 /* Double+Utils.swift in Sources */,
 				9B249EE62B8374CE0033F542 /* Reachability.swift in Sources */,
 				9B249EF12B8384FF0033F542 /* ShopsListViewModel.swift in Sources */,
 				9B249ED82B836F8D0033F542 /* ShopsListViewController.swift in Sources */,
 				9B249F032B84D8410033F542 /* UIImageView+Utils.swift in Sources */,
 				9B249EF82B84CE2E0033F542 /* UITableViewCell+Utils.swift in Sources */,
+				9B1EE1402B882B4200C89DB0 /* HudView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

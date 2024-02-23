@@ -10,7 +10,10 @@ import CoreLocation
 struct Location: Codable {
   let latitude: CLLocationDegrees
   let longitude: CLLocationDegrees
-
+  var location: CLLocation {
+    CLLocation(latitude: latitude, longitude: longitude)
+  }
+  
   init(latitude: CLLocationDegrees, longitude: CLLocationDegrees) {
       self.latitude = latitude
       self.longitude = longitude

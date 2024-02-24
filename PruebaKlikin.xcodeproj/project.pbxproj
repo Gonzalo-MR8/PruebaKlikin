@@ -10,6 +10,16 @@
 		9B1EE1402B882B4200C89DB0 /* HudView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B1EE13F2B882B4200C89DB0 /* HudView.swift */; };
 		9B1EE1422B882B4E00C89DB0 /* HudView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9B1EE1412B882B4E00C89DB0 /* HudView.xib */; };
 		9B1EE1442B882BF500C89DB0 /* UIView+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B1EE1432B882BF500C89DB0 /* UIView+Utils.swift */; };
+		9B1EE1482B88398900C89DB0 /* ShopDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B1EE1462B88398900C89DB0 /* ShopDetailViewController.swift */; };
+		9B1EE1492B88398900C89DB0 /* ShopDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9B1EE1472B88398900C89DB0 /* ShopDetailViewController.xib */; };
+		9B1EE14D2B88C4B200C89DB0 /* HeaderImageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B1EE14B2B88C4B200C89DB0 /* HeaderImageCell.swift */; };
+		9B1EE14E2B88C4B200C89DB0 /* HeaderImageCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9B1EE14C2B88C4B200C89DB0 /* HeaderImageCell.xib */; };
+		9B1EE1512B88C4C200C89DB0 /* MapCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B1EE14F2B88C4C200C89DB0 /* MapCell.swift */; };
+		9B1EE1522B88C4C200C89DB0 /* MapCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9B1EE1502B88C4C200C89DB0 /* MapCell.xib */; };
+		9B1EE1552B88C51C00C89DB0 /* InfoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B1EE1532B88C51C00C89DB0 /* InfoCell.swift */; };
+		9B1EE1562B88C51C00C89DB0 /* InfoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9B1EE1542B88C51C00C89DB0 /* InfoCell.xib */; };
+		9B1EE1592B88C57000C89DB0 /* ShopDescriptionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B1EE1572B88C57000C89DB0 /* ShopDescriptionCell.swift */; };
+		9B1EE15A2B88C57000C89DB0 /* ShopDescriptionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9B1EE1582B88C57000C89DB0 /* ShopDescriptionCell.xib */; };
 		9B249EB92B836E3B0033F542 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B249EB82B836E3B0033F542 /* AppDelegate.swift */; };
 		9B249EC22B836E3C0033F542 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9B249EC12B836E3C0033F542 /* Assets.xcassets */; };
 		9B249EC52B836E3C0033F542 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9B249EC32B836E3C0033F542 /* LaunchScreen.storyboard */; };
@@ -42,12 +52,23 @@
 		9B249F112B86756A0033F542 /* UserDefaults+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B249F102B86756A0033F542 /* UserDefaults+Utils.swift */; };
 		9B249F132B86758E0033F542 /* UserDefaultsValues.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B249F122B86758E0033F542 /* UserDefaultsValues.swift */; };
 		9B249F152B87FA2E0033F542 /* Double+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B249F142B87FA2E0033F542 /* Double+Utils.swift */; };
+		9BABD7552B8929B900CB6A57 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BABD7542B8929B900CB6A57 /* Constants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		9B1EE13F2B882B4200C89DB0 /* HudView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HudView.swift; sourceTree = "<group>"; };
 		9B1EE1412B882B4E00C89DB0 /* HudView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HudView.xib; sourceTree = "<group>"; };
 		9B1EE1432B882BF500C89DB0 /* UIView+Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Utils.swift"; sourceTree = "<group>"; };
+		9B1EE1462B88398900C89DB0 /* ShopDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopDetailViewController.swift; sourceTree = "<group>"; };
+		9B1EE1472B88398900C89DB0 /* ShopDetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ShopDetailViewController.xib; sourceTree = "<group>"; };
+		9B1EE14B2B88C4B200C89DB0 /* HeaderImageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderImageCell.swift; sourceTree = "<group>"; };
+		9B1EE14C2B88C4B200C89DB0 /* HeaderImageCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HeaderImageCell.xib; sourceTree = "<group>"; };
+		9B1EE14F2B88C4C200C89DB0 /* MapCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapCell.swift; sourceTree = "<group>"; };
+		9B1EE1502B88C4C200C89DB0 /* MapCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MapCell.xib; sourceTree = "<group>"; };
+		9B1EE1532B88C51C00C89DB0 /* InfoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoCell.swift; sourceTree = "<group>"; };
+		9B1EE1542B88C51C00C89DB0 /* InfoCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = InfoCell.xib; sourceTree = "<group>"; };
+		9B1EE1572B88C57000C89DB0 /* ShopDescriptionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopDescriptionCell.swift; sourceTree = "<group>"; };
+		9B1EE1582B88C57000C89DB0 /* ShopDescriptionCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ShopDescriptionCell.xib; sourceTree = "<group>"; };
 		9B249EB52B836E3B0033F542 /* PruebaKlikin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PruebaKlikin.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9B249EB82B836E3B0033F542 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9B249EC12B836E3C0033F542 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -81,6 +102,7 @@
 		9B249F102B86756A0033F542 /* UserDefaults+Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UserDefaults+Utils.swift"; sourceTree = "<group>"; };
 		9B249F122B86758E0033F542 /* UserDefaultsValues.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsValues.swift; sourceTree = "<group>"; };
 		9B249F142B87FA2E0033F542 /* Double+Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Double+Utils.swift"; sourceTree = "<group>"; };
+		9BABD7542B8929B900CB6A57 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +124,31 @@
 				9B1EE1412B882B4E00C89DB0 /* HudView.xib */,
 			);
 			path = Common;
+			sourceTree = "<group>";
+		};
+		9B1EE1452B88396000C89DB0 /* ShopDetail */ = {
+			isa = PBXGroup;
+			children = (
+				9B1EE14A2B88C3E200C89DB0 /* Cells */,
+				9B1EE1462B88398900C89DB0 /* ShopDetailViewController.swift */,
+				9B1EE1472B88398900C89DB0 /* ShopDetailViewController.xib */,
+			);
+			path = ShopDetail;
+			sourceTree = "<group>";
+		};
+		9B1EE14A2B88C3E200C89DB0 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				9B1EE14B2B88C4B200C89DB0 /* HeaderImageCell.swift */,
+				9B1EE14C2B88C4B200C89DB0 /* HeaderImageCell.xib */,
+				9B1EE14F2B88C4C200C89DB0 /* MapCell.swift */,
+				9B1EE1502B88C4C200C89DB0 /* MapCell.xib */,
+				9B1EE1532B88C51C00C89DB0 /* InfoCell.swift */,
+				9B1EE1542B88C51C00C89DB0 /* InfoCell.xib */,
+				9B1EE1572B88C57000C89DB0 /* ShopDescriptionCell.swift */,
+				9B1EE1582B88C57000C89DB0 /* ShopDescriptionCell.xib */,
+			);
+			path = Cells;
 			sourceTree = "<group>";
 		};
 		9B249EAC2B836E3B0033F542 = {
@@ -152,6 +199,7 @@
 				9B249F002B84D81B0033F542 /* ImageDownloader.swift */,
 				9B249F0E2B8671E50033F542 /* LocationManager.swift */,
 				9B249F102B86756A0033F542 /* UserDefaults+Utils.swift */,
+				9BABD7542B8929B900CB6A57 /* Constants.swift */,
 			);
 			path = Util;
 			sourceTree = "<group>";
@@ -175,6 +223,7 @@
 			children = (
 				9B1EE13A2B882A5E00C89DB0 /* Common */,
 				9B249EEF2B8384E50033F542 /* ShopsList */,
+				9B1EE1452B88396000C89DB0 /* ShopDetail */,
 			);
 			path = UseCases;
 			sourceTree = "<group>";
@@ -322,11 +371,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				9B1EE1422B882B4E00C89DB0 /* HudView.xib in Resources */,
+				9B1EE1492B88398900C89DB0 /* ShopDetailViewController.xib in Resources */,
 				9B249EFD2B84D45A0033F542 /* Colors.xcassets in Resources */,
 				9B249F092B86221D0033F542 /* CategoryCell.xib in Resources */,
+				9B1EE1522B88C4C200C89DB0 /* MapCell.xib in Resources */,
 				9B249EC52B836E3C0033F542 /* LaunchScreen.storyboard in Resources */,
+				9B1EE15A2B88C57000C89DB0 /* ShopDescriptionCell.xib in Resources */,
 				9B249ED92B836F8D0033F542 /* ShopsListViewController.xib in Resources */,
 				9B249EC22B836E3C0033F542 /* Assets.xcassets in Resources */,
+				9B1EE14E2B88C4B200C89DB0 /* HeaderImageCell.xib in Resources */,
+				9B1EE1562B88C51C00C89DB0 /* InfoCell.xib in Resources */,
 				9B249EF62B84CC4B0033F542 /* ShopCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -342,27 +396,33 @@
 				9B249F082B86221D0033F542 /* CategoryCell.swift in Sources */,
 				9B1EE1442B882BF500C89DB0 /* UIView+Utils.swift in Sources */,
 				9B249ED22B836EDC0033F542 /* UIApplication+Utils.swift in Sources */,
+				9B1EE1552B88C51C00C89DB0 /* InfoCell.swift in Sources */,
 				9B249EE22B83748E0033F542 /* EndPointProtocol.swift in Sources */,
 				9B249F0B2B86230E0033F542 /* UICollectionViewCell+Utils.swift in Sources */,
 				9B249EEE2B83847A0033F542 /* ShopsServices.swift in Sources */,
 				9B249EEA2B8383E60033F542 /* Shop.swift in Sources */,
 				9B249EEC2B8384030033F542 /* ShopsEndPoint.swift in Sources */,
+				9B1EE14D2B88C4B200C89DB0 /* HeaderImageCell.swift in Sources */,
 				9B249EE42B8374BB0033F542 /* NetworkManager.swift in Sources */,
 				9B249ECE2B836E6B0033F542 /* CustomNavigationController.swift in Sources */,
 				9B249F132B86758E0033F542 /* UserDefaultsValues.swift in Sources */,
 				9B249EE82B8374E20033F542 /* NetworkClient.swift in Sources */,
+				9B1EE1512B88C4C200C89DB0 /* MapCell.swift in Sources */,
 				9B249EFF2B84D7860033F542 /* Colors.swift in Sources */,
 				9B249F012B84D81B0033F542 /* ImageDownloader.swift in Sources */,
+				9B1EE1592B88C57000C89DB0 /* ShopDescriptionCell.swift in Sources */,
 				9B249F112B86756A0033F542 /* UserDefaults+Utils.swift in Sources */,
 				9B249F0D2B8671290033F542 /* Location.swift in Sources */,
 				9B249F0F2B8671E50033F542 /* LocationManager.swift in Sources */,
 				9B249EF52B84CC4B0033F542 /* ShopCell.swift in Sources */,
+				9BABD7552B8929B900CB6A57 /* Constants.swift in Sources */,
 				9B249EB92B836E3B0033F542 /* AppDelegate.swift in Sources */,
 				9B249F152B87FA2E0033F542 /* Double+Utils.swift in Sources */,
 				9B249EE62B8374CE0033F542 /* Reachability.swift in Sources */,
 				9B249EF12B8384FF0033F542 /* ShopsListViewModel.swift in Sources */,
 				9B249ED82B836F8D0033F542 /* ShopsListViewController.swift in Sources */,
 				9B249F032B84D8410033F542 /* UIImageView+Utils.swift in Sources */,
+				9B1EE1482B88398900C89DB0 /* ShopDetailViewController.swift in Sources */,
 				9B249EF82B84CE2E0033F542 /* UITableViewCell+Utils.swift in Sources */,
 				9B1EE1402B882B4200C89DB0 /* HudView.swift in Sources */,
 			);

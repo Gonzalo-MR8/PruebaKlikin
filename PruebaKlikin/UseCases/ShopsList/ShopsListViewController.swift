@@ -94,7 +94,7 @@ extension ShopsListViewController: UITableViewDataSource {
   }
 
   func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-    let shop: Shop = viewModel.getShops()[indexPath.row]
+    let shop: Shop = viewModel.getShop(index: indexPath.row)
     let distance = shop.location.location.distance(from: LocationManager.shared.lastUserLocation)
     
     guard let cell = tableView.dequeueReusableCell(withIdentifier: ShopCell.identifier) as? ShopCell else { return UITableViewCell() }
@@ -112,5 +112,15 @@ extension ShopsListViewController: UITableViewDataSource {
     }
 
     return cell
+  }
+}
+
+// MARK: - UITableViewDelegate
+
+extension ShopsListViewController: UITableViewDelegate {
+  func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+    let shopDetailVC = ShopDetailViewController.initAndLoad(shop: viewModel.getShop(index: indexPath.row))
+
+    CustomNavigationController.instance.navigate(to: shopDetailVC, animated: true)
   }
 }

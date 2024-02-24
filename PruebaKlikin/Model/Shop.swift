@@ -18,6 +18,7 @@ struct Shop: Codable {
   let location: Location
   let openingHours: String
   let address: Address
+  let id: Int
 
   private enum CodingKeys: String,CodingKey {
     case photo
@@ -27,6 +28,7 @@ struct Shop: Codable {
     case location
     case openingHours
     case address
+    case id = "_id"
   }
 
   init(from decoder: Decoder) throws {
@@ -47,6 +49,7 @@ struct Shop: Codable {
 
     openingHours = try container.decode(String.self, forKey: .openingHours)
     address = try container.decode(Address.self, forKey: .address)
+    id = try container.decode(Int.self, forKey: .id)
   }
 }
 

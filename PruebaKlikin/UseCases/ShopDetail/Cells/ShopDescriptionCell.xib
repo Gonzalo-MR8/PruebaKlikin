@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="180" id="KGk-i7-Jjw" customClass="ShopDescriptionCell" customModule="PruebaKlikin" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="400" height="180"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="400" height="180"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="l5G-mh-C24" customClass="CIView" customModule="CustomUIKitItems">
+                        <rect key="frame" x="16" y="54" width="368" height="110"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ino-pC-T89">
+                                <rect key="frame" x="16" y="15.999999999999998" width="336" height="20.333333333333329"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                <color key="textColor" name="black100"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" name="white100"/>
+                        <constraints>
+                            <constraint firstItem="ino-pC-T89" firstAttribute="leading" secondItem="l5G-mh-C24" secondAttribute="leading" constant="16" id="5Fm-Wx-Mqu"/>
+                            <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="ino-pC-T89" secondAttribute="bottom" constant="16" id="9V5-do-DFf"/>
+                            <constraint firstAttribute="trailing" secondItem="ino-pC-T89" secondAttribute="trailing" constant="16" id="FUL-HD-MXc"/>
+                            <constraint firstItem="ino-pC-T89" firstAttribute="top" secondItem="l5G-mh-C24" secondAttribute="top" constant="16" id="j4F-bZ-B20"/>
+                            <constraint firstAttribute="height" priority="999" constant="110" id="oIY-fV-6li"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="6"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sobre el comercio" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pBo-PW-m5s">
+                        <rect key="frame" x="16" y="16" width="368" height="22"/>
+                        <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                        <color key="textColor" name="black100"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <color key="backgroundColor" name="background100"/>
+                <constraints>
+                    <constraint firstItem="pBo-PW-m5s" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="Chq-CU-0L9"/>
+                    <constraint firstAttribute="bottom" secondItem="l5G-mh-C24" secondAttribute="bottom" constant="16" id="LRJ-f4-86L"/>
+                    <constraint firstAttribute="trailing" secondItem="pBo-PW-m5s" secondAttribute="trailing" constant="16" id="LT8-G6-gHM"/>
+                    <constraint firstItem="pBo-PW-m5s" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="16" id="QwJ-kQ-tU8"/>
+                    <constraint firstAttribute="trailing" secondItem="l5G-mh-C24" secondAttribute="trailing" constant="16" id="SJ7-XN-bgZ"/>
+                    <constraint firstItem="l5G-mh-C24" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="cto-MO-HvT"/>
+                    <constraint firstItem="l5G-mh-C24" firstAttribute="top" secondItem="pBo-PW-m5s" secondAttribute="bottom" constant="16" id="tRK-wY-pO5"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="labelDescription" destination="ino-pC-T89" id="6ce-AN-zLz"/>
+            </connections>
+            <point key="canvasLocation" x="190.83969465648855" y="35.211267605633807"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <namedColor name="background100">
+            <color red="0.97254901960784312" green="0.97254901960784312" blue="0.97254901960784312" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="black100">
+            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+        </namedColor>
+        <namedColor name="white100">
+            <color red="0.99607843137254903" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

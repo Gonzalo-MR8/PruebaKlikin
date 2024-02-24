@@ -27,6 +27,10 @@ final class ShopsListViewModel {
     filteredShops
   }
 
+  func getShop(index: Int) -> Shop {
+    filteredShops[index]
+  }
+
   private func sortShopsByDistance() {
     let lastUserLocation: CLLocation = LocationManager.shared.lastUserLocation
 

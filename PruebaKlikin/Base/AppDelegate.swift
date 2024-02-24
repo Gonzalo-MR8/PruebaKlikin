@@ -19,5 +19,17 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     return true
   }
 
+  func application(_ app: UIApplication, open url: URL, options: [UIApplication.OpenURLOptionsKey : Any] = [:]) -> Bool {
+    let urlString = url.absoluteString
+
+    if urlString.starts(with: "ptklikin://detalle/") {
+      let id = urlString.replacingOccurrences(of: "ptklikin://detalle/", with: "")
+
+      UserDefaults.standard.shopId = Int(id)
+      NotificationCenter.default.post(name: .DeepLinkCall, object: nil, userInfo: ["id": Int(id) ?? ""])
+    }
+
+    return true
+  }
 }
 

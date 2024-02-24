@@ -35,22 +35,17 @@ final class CustomNavigationController: UINavigationController {
         return window
     }
 
-    func navigate(to destination: UIViewController, animated: Bool, closePreviousVC: Bool = false) {
+    func navigate(to destination: UIViewController, animated: Bool, closePreviousVC: AnyClass? = nil) {
         if let topViewController = UIApplication.topViewController(controller: self), let nav = topViewController.navigationController {
+            if let closePreviousVC, getViewControllerInStack(classVC: closePreviousVC) != nil {
+              nav.viewControllers.removeLast()
+            }
             nav.pushViewController(destination, animated: animated)
-            if closePreviousVC {
-                if let index = nav.viewControllers.firstIndex(of: destination), index > 0 {
-                    nav.viewControllers.removeSubrange(0..<index)
-                }
-            }
-
         } else {
-            self.pushViewController(destination, animated: animated)
-            if closePreviousVC {
-                if let index = self.viewControllers.firstIndex(of: destination), index > 0 {
-                    self.viewControllers.removeSubrange(0..<index)
-                }
+            if let closePreviousVC, getViewControllerInStack(classVC: closePreviousVC) != nil {
+              self.viewControllers.removeLast()
             }
+            self.pushViewController(destination, animated: animated)
         }
     }
 
@@ -77,6 +72,10 @@ final class CustomNavigationController: UINavigationController {
             completion?()
         }
     }
+
+  private func getViewControllerInStack(classVC: AnyClass) -> UIViewController? {
+      return self.viewControllers.first(where: { type(of: $0) == classVC })
+  }
 
   func showAlertView(title: String, message: String, buttonText: String) {
         let alert = UIAlertController(title: title, message: message, preferredStyle: UIAlertController.Style.alert)

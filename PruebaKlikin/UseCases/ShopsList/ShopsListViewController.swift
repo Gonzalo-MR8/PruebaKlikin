@@ -26,6 +26,8 @@ class ShopsListViewController: UIViewController {
 
     self.viewModel = ShopsListViewModel()
 
+    NotificationCenter.default.addObserver(self, selector: #selector(handleDeepLink), name: .DeepLinkCall, object: nil)
+
     configureTableAndCollectionViews()
 
     Task {
@@ -34,6 +36,10 @@ class ShopsListViewController: UIViewController {
         tableView.reloadData()
         labelNumberOfShops.text = viewModel.getShops().count.description
         CustomNavigationController.instance.closeHudView()
+
+        guard let id = UserDefaults.standard.shopId, let shop = viewModel.getShop(id: id) else { return }
+
+        manageDeepLink(shop: shop)
       } catch {
         CustomNavigationController.instance.showAlertView(title: "Error", message: "Ha ocurrido un error inesperado", buttonText: "Vale")
         CustomNavigationController.instance.closeHudView()
@@ -42,10 +48,21 @@ class ShopsListViewController: UIViewController {
 
     LocationManager.shared.requestLocationPermission()
   }
+  
+  deinit {
+    NotificationCenter.default.removeObserver(self, name: .DeepLinkCall, object: nil)
+  }
 
   private func configureTableAndCollectionViews() {
     collectionView.register(CategoryCell.nib, forCellWithReuseIdentifier: CategoryCell.identifier)
     tableView.register(ShopCell.nib, forCellReuseIdentifier: ShopCell.identifier)
+  }
+
+  private func manageDeepLink(shop: Shop) {
+    UserDefaults.standard.shopId = nil
+
+    let shopDetailVC = ShopDetailViewController.initAndLoad(shop: shop)
+    CustomNavigationController.instance.navigate(to: shopDetailVC, animated: false, closePreviousVC: ShopDetailViewController.self)
   }
 }
 
@@ -122,5 +139,13 @@ extension ShopsListViewController: UITableViewDelegate {
     let shopDetailVC = ShopDetailViewController.initAndLoad(shop: viewModel.getShop(index: indexPath.row))
 
     CustomNavigationController.instance.navigate(to: shopDetailVC, animated: true)
+  }
+}
+
+extension ShopsListViewController {
+  @objc func handleDeepLink(notification: Notification) {
+    guard let id = notification.userInfo?["id"] as? Int, let shop = viewModel.getShop(id: id) else { return }
+
+    manageDeepLink(shop: shop)
   }
 }

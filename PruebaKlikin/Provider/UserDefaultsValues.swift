@@ -9,7 +9,8 @@ import Foundation
 
 extension UserDefaults {
   struct UserDefaultKeys {
-    static let kLastLocation = "LastLocation"
+    static let kLastLocation  = "LastLocation"
+    static let kshopId        = "ShopId"
   }
 
   // MARK: - LastLocation
@@ -21,6 +22,17 @@ extension UserDefaults {
     }
     set {
       set(object: newValue, forKey: UserDefaultKeys.kLastLocation)
+    }
+  }
+
+  var shopId: Int? {
+    get {
+      guard let shopId = get(objectType: Int.self, forKey: UserDefaultKeys.kshopId) else { return nil }
+
+      return shopId
+    }
+    set {
+      set(object: newValue, forKey: UserDefaultKeys.kshopId)
     }
   }
 }

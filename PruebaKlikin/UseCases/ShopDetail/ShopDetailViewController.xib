@@ -21,17 +21,17 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sa6-PM-hkB">
-                    <rect key="frame" x="0.0" y="0.0" width="393" height="95"/>
+                    <rect key="frame" x="0.0" y="0.0" width="393" height="100"/>
                     <subviews>
                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Arrow_left" translatesAutoresizingMaskIntoConstraints="NO" id="vpC-QC-LgS">
-                            <rect key="frame" x="16" y="63" width="28" height="28"/>
+                            <rect key="frame" x="16" y="60" width="28" height="28"/>
                             <constraints>
                                 <constraint firstAttribute="width" secondItem="vpC-QC-LgS" secondAttribute="height" multiplier="1:1" id="ehC-lr-c3B"/>
                                 <constraint firstAttribute="height" constant="28" id="x2Y-YO-qSh"/>
                             </constraints>
                         </imageView>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="njU-qY-kez">
-                            <rect key="frame" x="7.6666666666666679" y="54.333333333333343" width="45" height="45"/>
+                            <rect key="frame" x="7.6666666666666679" y="51.333333333333343" width="45" height="45"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="45" id="4tj-nb-zry"/>
                                 <constraint firstAttribute="width" secondItem="njU-qY-kez" secondAttribute="height" multiplier="1:1" id="n2E-sD-N0v"/>
@@ -43,7 +43,7 @@
                             </connections>
                         </button>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Listado de Comercios" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="csh-9G-bK0">
-                            <rect key="frame" x="113.66666666666667" y="66.666666666666671" width="165.66666666666663" height="20.333333333333329"/>
+                            <rect key="frame" x="113.66666666666667" y="63.666666666666664" width="165.66666666666663" height="20.333333333333336"/>
                             <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
                             <color key="textColor" name="black100"/>
                             <nil key="highlightedColor"/>
@@ -51,17 +51,17 @@
                     </subviews>
                     <color key="backgroundColor" name="white100"/>
                     <constraints>
-                        <constraint firstAttribute="height" constant="95" id="45n-re-4k7"/>
+                        <constraint firstAttribute="height" constant="100" id="45n-re-4k7"/>
                         <constraint firstItem="vpC-QC-LgS" firstAttribute="leading" secondItem="sa6-PM-hkB" secondAttribute="leading" constant="16" id="DRk-Hs-SCg"/>
                         <constraint firstItem="njU-qY-kez" firstAttribute="centerY" secondItem="vpC-QC-LgS" secondAttribute="centerY" id="FTd-4F-mpP"/>
                         <constraint firstItem="vpC-QC-LgS" firstAttribute="centerY" secondItem="csh-9G-bK0" secondAttribute="centerY" id="FdA-5W-yKx"/>
                         <constraint firstItem="csh-9G-bK0" firstAttribute="centerX" secondItem="sa6-PM-hkB" secondAttribute="centerX" id="ThI-wG-5LM"/>
-                        <constraint firstAttribute="bottom" secondItem="csh-9G-bK0" secondAttribute="bottom" constant="8" id="WSO-kx-XyP"/>
+                        <constraint firstAttribute="bottom" secondItem="csh-9G-bK0" secondAttribute="bottom" constant="16" id="WSO-kx-XyP"/>
                         <constraint firstItem="njU-qY-kez" firstAttribute="centerX" secondItem="vpC-QC-LgS" secondAttribute="centerX" id="c7v-MP-LQT"/>
                     </constraints>
                 </view>
                 <tableView clipsSubviews="YES" contentMode="scaleToFill" bounces="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" bouncesZoom="NO" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="jG0-W9-HXR">
-                    <rect key="frame" x="0.0" y="95" width="393" height="757"/>
+                    <rect key="frame" x="0.0" y="100" width="393" height="752"/>
                     <color key="backgroundColor" name="background100"/>
                     <connections>
                         <outlet property="dataSource" destination="-1" id="UYp-ea-LLB"/>

@@ -22,37 +22,37 @@ class CategoryCell: UICollectionViewCell {
       imageViewIcon.tintColor = Colors.yellow100.value
       imageViewIcon.image = UIImage(named: "Truck_white")
       labelCategory.textColor = Colors.yellow100.value
-      labelCategory.text = "Beauty"
+      labelCategory.text = "Belleza"
     case .directSales:
       imageViewIcon.tintColor = Colors.yellow100.value
       imageViewIcon.image = UIImage(named: "Payment_Regulated_Parking_white")
       labelCategory.textColor = Colors.yellow100.value
-      labelCategory.text = "Direct Sales"
+      labelCategory.text = "Venta directa"
     case .electricStation:
       imageViewIcon.tintColor = Colors.blue100.value
       imageViewIcon.image = UIImage(named: "Electric Scooter_white")
       labelCategory.textColor = Colors.blue100.value
-      labelCategory.text = "Electric Station"
+      labelCategory.text = "Carga eléctrica"
     case .food:
       imageViewIcon.tintColor = Colors.yellow100.value
       imageViewIcon.image = UIImage(named: "Catering_white")
       labelCategory.textColor = Colors.yellow100.value
-      labelCategory.text = "Food"
+      labelCategory.text = "Comida"
     case .gasStation:
       imageViewIcon.tintColor = Colors.orange100.value
       imageViewIcon.image = UIImage(named: "EES_white")
       labelCategory.textColor = Colors.orange100.value
-      labelCategory.text = "Gas Station"
+      labelCategory.text = "Gasolinera"
     case .leisure:
       imageViewIcon.tintColor = Colors.blue100.value
       imageViewIcon.image = UIImage(named: "Leisure_white")
       labelCategory.textColor = Colors.blue100.value
-      labelCategory.text = "Leisure"
+      labelCategory.text = "Ocio"
     case .shopping:
       imageViewIcon.tintColor = Colors.yellow100.value
       imageViewIcon.image = UIImage(named: "Cart_white")
       labelCategory.textColor = Colors.yellow100.value
-      labelCategory.text = "Shopping"
+      labelCategory.text = "Compras"
     }
   }
 }

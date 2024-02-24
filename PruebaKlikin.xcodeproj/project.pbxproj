@@ -52,7 +52,7 @@
 		9B249F112B86756A0033F542 /* UserDefaults+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B249F102B86756A0033F542 /* UserDefaults+Utils.swift */; };
 		9B249F132B86758E0033F542 /* UserDefaultsValues.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B249F122B86758E0033F542 /* UserDefaultsValues.swift */; };
 		9B249F152B87FA2E0033F542 /* Double+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B249F142B87FA2E0033F542 /* Double+Utils.swift */; };
-		9BABD7552B8929B900CB6A57 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BABD7542B8929B900CB6A57 /* Constants.swift */; };
+		9BABD75D2B8A295300CB6A57 /* NavigationAppChooser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BABD75C2B8A295300CB6A57 /* NavigationAppChooser.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -102,7 +102,7 @@
 		9B249F102B86756A0033F542 /* UserDefaults+Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UserDefaults+Utils.swift"; sourceTree = "<group>"; };
 		9B249F122B86758E0033F542 /* UserDefaultsValues.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsValues.swift; sourceTree = "<group>"; };
 		9B249F142B87FA2E0033F542 /* Double+Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Double+Utils.swift"; sourceTree = "<group>"; };
-		9BABD7542B8929B900CB6A57 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		9BABD75C2B8A295300CB6A57 /* NavigationAppChooser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationAppChooser.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -199,7 +199,7 @@
 				9B249F002B84D81B0033F542 /* ImageDownloader.swift */,
 				9B249F0E2B8671E50033F542 /* LocationManager.swift */,
 				9B249F102B86756A0033F542 /* UserDefaults+Utils.swift */,
-				9BABD7542B8929B900CB6A57 /* Constants.swift */,
+				9BABD75C2B8A295300CB6A57 /* NavigationAppChooser.swift */,
 			);
 			path = Util;
 			sourceTree = "<group>";
@@ -404,6 +404,7 @@
 				9B249EEC2B8384030033F542 /* ShopsEndPoint.swift in Sources */,
 				9B1EE14D2B88C4B200C89DB0 /* HeaderImageCell.swift in Sources */,
 				9B249EE42B8374BB0033F542 /* NetworkManager.swift in Sources */,
+				9BABD75D2B8A295300CB6A57 /* NavigationAppChooser.swift in Sources */,
 				9B249ECE2B836E6B0033F542 /* CustomNavigationController.swift in Sources */,
 				9B249F132B86758E0033F542 /* UserDefaultsValues.swift in Sources */,
 				9B249EE82B8374E20033F542 /* NetworkClient.swift in Sources */,
@@ -415,7 +416,6 @@
 				9B249F0D2B8671290033F542 /* Location.swift in Sources */,
 				9B249F0F2B8671E50033F542 /* LocationManager.swift in Sources */,
 				9B249EF52B84CC4B0033F542 /* ShopCell.swift in Sources */,
-				9BABD7552B8929B900CB6A57 /* Constants.swift in Sources */,
 				9B249EB92B836E3B0033F542 /* AppDelegate.swift in Sources */,
 				9B249F152B87FA2E0033F542 /* Double+Utils.swift in Sources */,
 				9B249EE62B8374CE0033F542 /* Reachability.swift in Sources */,

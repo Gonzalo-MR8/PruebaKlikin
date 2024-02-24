@@ -24,10 +24,10 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4xj-7O-1TU">
-                    <rect key="frame" x="0.0" y="0.0" width="393" height="95"/>
+                    <rect key="frame" x="0.0" y="0.0" width="393" height="100"/>
                     <subviews>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Listado de Comercios" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b9Y-ej-47Y">
-                            <rect key="frame" x="110.33333333333333" y="66.666666666666671" width="172.33333333333337" height="20.333333333333329"/>
+                            <rect key="frame" x="110.33333333333333" y="63.666666666666664" width="172.33333333333337" height="20.333333333333336"/>
                             <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
                             <color key="textColor" name="black100"/>
                             <nil key="highlightedColor"/>
@@ -35,13 +35,13 @@
                     </subviews>
                     <color key="backgroundColor" name="white100"/>
                     <constraints>
-                        <constraint firstAttribute="height" constant="95" id="9GK-uR-2tn"/>
-                        <constraint firstAttribute="bottom" secondItem="b9Y-ej-47Y" secondAttribute="bottom" constant="8" id="lfh-cj-6pT"/>
+                        <constraint firstAttribute="height" constant="100" id="9GK-uR-2tn"/>
+                        <constraint firstAttribute="bottom" secondItem="b9Y-ej-47Y" secondAttribute="bottom" constant="16" id="lfh-cj-6pT"/>
                         <constraint firstItem="b9Y-ej-47Y" firstAttribute="centerX" secondItem="4xj-7O-1TU" secondAttribute="centerX" id="qgF-0l-GwV"/>
                     </constraints>
                 </view>
                 <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="Zyo-gw-22s">
-                    <rect key="frame" x="0.0" y="95" width="393" height="110"/>
+                    <rect key="frame" x="0.0" y="100" width="393" height="110"/>
                     <subviews>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zGu-r9-nrX">
                             <rect key="frame" x="0.0" y="0.0" width="196.66666666666666" height="110"/>
@@ -142,7 +142,7 @@
                     </constraints>
                 </stackView>
                 <tableView clipsSubviews="YES" contentMode="scaleToFill" bounces="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" bouncesZoom="NO" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="BhP-Td-FdL">
-                    <rect key="frame" x="0.0" y="265" width="393" height="587"/>
+                    <rect key="frame" x="0.0" y="270" width="393" height="582"/>
                     <color key="backgroundColor" name="background100"/>
                     <connections>
                         <outlet property="dataSource" destination="-1" id="atg-Em-UV3"/>
@@ -150,7 +150,7 @@
                     </connections>
                 </tableView>
                 <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" bouncesZoom="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="MXi-tW-IY4">
-                    <rect key="frame" x="0.0" y="205" width="393" height="60"/>
+                    <rect key="frame" x="0.0" y="210" width="393" height="60"/>
                     <color key="backgroundColor" name="background100"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="60" id="ujd-7z-cu5"/>

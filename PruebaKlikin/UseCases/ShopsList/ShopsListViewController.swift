@@ -82,7 +82,7 @@ extension ShopsListViewController: UICollectionViewDelegate {
 
 extension ShopsListViewController: UICollectionViewDelegateFlowLayout {
   func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-    CGSize(width: collectionView.frame.width / 2.5, height: 66)
+    CGSize(width: collectionView.frame.width / 2.4, height: 66)
   }
 }
 

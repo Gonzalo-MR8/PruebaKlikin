@@ -15,6 +15,7 @@ enum Colors: String {
   case blue20
   case yellow100
   case darkBlue100
+  case lightBlue100
   case background100
 }
 

@@ -18,21 +18,30 @@
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YiA-Ts-PW5">
-                        <rect key="frame" x="16" y="15.999999999999998" width="368" height="20.333333333333329"/>
+                        <rect key="frame" x="16" y="16" width="368" height="22"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Localización" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kgL-5d-lDq">
-                                <rect key="frame" x="0.0" y="0.0" width="368" height="20.333333333333332"/>
+                                <rect key="frame" x="0.0" y="0.0" width="98.333333333333329" height="22"/>
                                 <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
                                 <color key="textColor" name="black100"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="trailing" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xol-yH-5af">
+                                <rect key="frame" x="98.333333333333343" y="0.0" width="269.66666666666663" height="22"/>
+                                <color key="tintColor" name="lightBlue100"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Llévame aquí"/>
+                                <connections>
+                                    <action selector="bringMeHerePressed:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="bvK-OQ-hIw"/>
+                                </connections>
+                            </button>
                         </subviews>
                     </stackView>
-                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Adc-XS-090">
-                        <rect key="frame" x="0.0" y="52.333333333333329" width="400" height="201.66666666666669"/>
-                        <color key="backgroundColor" name="yellow100"/>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Adc-XS-090" customClass="MKMapView">
+                        <rect key="frame" x="0.0" y="54" width="400" height="200"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstAttribute="height" constant="201.66999999999999" id="80k-al-3of"/>
+                            <constraint firstAttribute="height" constant="200" id="C0l-T8-s3N"/>
                         </constraints>
                     </view>
                 </subviews>
@@ -48,6 +57,9 @@
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="mapView" destination="Adc-XS-090" id="LoV-7s-PTj"/>
+            </connections>
             <point key="canvasLocation" x="129.7709923664122" y="-12.67605633802817"/>
         </tableViewCell>
     </objects>
@@ -58,8 +70,8 @@
         <namedColor name="black100">
             <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
         </namedColor>
-        <namedColor name="yellow100">
-            <color red="0.98039215686274506" green="0.78431372549019607" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        <namedColor name="lightBlue100">
+            <color red="0.11372549019607843" green="0.40392156862745099" blue="0.49019607843137253" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
     </resources>
 </document>

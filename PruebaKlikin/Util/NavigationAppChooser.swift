@@ -100,7 +100,6 @@ public enum NavigationAppChooser {
 
       UIApplication.shared.open(url, options: [:], completionHandler: {
           (success) in
-          print("Open \(url.absoluteString): \(success)")
           completion?(success)
       })
     }

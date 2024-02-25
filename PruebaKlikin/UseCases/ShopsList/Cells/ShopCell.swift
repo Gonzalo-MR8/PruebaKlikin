@@ -24,10 +24,10 @@ class ShopCell: UITableViewCell {
     labelOpeningHours.text = shop.openingHours
 
     if distance < 1000 {
-      labelDistanceToUser.text = "\(Int(distance)) m"
+      labelDistanceToUser.text = "\(Int(distance))m."
     } else {
       let distanceKm = distance / 1000
-      labelDistanceToUser.text = "\(distanceKm.rounded(toPlaces: 1)) km"
+      labelDistanceToUser.text = "\(distanceKm.rounded(toPlaces: 1))km."
     }
 
     switch shop.category {

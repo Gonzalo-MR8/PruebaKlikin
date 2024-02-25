@@ -40,9 +40,7 @@ class LocationManager: NSObject {
       CustomNavigationController.instance.showAlertView(title: "Permiso de ubicación", message: "Si quieres que las tiendas se ordenen por proximidad, ve a Ajustes y cambia los permisos de ubicación de la app", buttonText: "Vale")
     case .authorizedWhenInUse:
       locationManager.requestAlwaysAuthorization()
-      print("authorized")
-    case .authorizedAlways:
-      print("authorized")
+    case .authorizedAlways: break
     @unknown default: break
     }
   }

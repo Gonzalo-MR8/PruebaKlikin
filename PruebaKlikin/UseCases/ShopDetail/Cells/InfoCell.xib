@@ -21,10 +21,10 @@
                         <rect key="frame" x="16" y="16" width="368" height="128"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="bpu-gi-GqP">
-                                <rect key="frame" x="8" y="8" width="352" height="112"/>
+                                <rect key="frame" x="16" y="16" width="336" height="96"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="5r9-4P-Fax" customClass="CIImageView" customModule="CustomUIKitItems">
-                                        <rect key="frame" x="0.0" y="0.0" width="112" height="112"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="96" height="96"/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="5r9-4P-Fax" secondAttribute="height" multiplier="1:1" id="h57-aP-Rfn"/>
                                         </constraints>
@@ -35,7 +35,7 @@
                                         </userDefinedRuntimeAttributes>
                                     </imageView>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="ilt-mq-8oe">
-                                        <rect key="frame" x="124" y="0.0" width="228" height="112"/>
+                                        <rect key="frame" x="108" y="0.0" width="228" height="96"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Cs-p2-edX">
                                                 <rect key="frame" x="0.0" y="0.0" width="43.333333333333336" height="20.333333333333332"/>
@@ -44,13 +44,13 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xfF-nc-0EA">
-                                                <rect key="frame" x="0.0" y="22.333333333333336" width="41.333333333333336" height="69.666666666666657"/>
+                                                <rect key="frame" x="0.0" y="22.333333333333339" width="41.333333333333336" height="53.666666666666657"/>
                                                 <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
                                                 <color key="textColor" name="black100"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="Label" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cqY-cd-iPt">
-                                                <rect key="frame" x="0.0" y="94" width="37.333333333333336" height="18"/>
+                                                <rect key="frame" x="0.0" y="78" width="37.333333333333336" height="18"/>
                                                 <fontDescription key="fontDescription" style="UICTFontTextStyleSubhead"/>
                                                 <color key="textColor" name="black100"/>
                                                 <nil key="highlightedColor"/>
@@ -62,11 +62,11 @@
                         </subviews>
                         <color key="backgroundColor" name="white100"/>
                         <constraints>
-                            <constraint firstItem="bpu-gi-GqP" firstAttribute="top" secondItem="FJl-UF-Rzt" secondAttribute="top" constant="8" id="2Cg-bN-NKb"/>
-                            <constraint firstAttribute="bottom" secondItem="bpu-gi-GqP" secondAttribute="bottom" constant="8" id="9sE-BY-tQa"/>
+                            <constraint firstItem="bpu-gi-GqP" firstAttribute="top" secondItem="FJl-UF-Rzt" secondAttribute="top" constant="16" id="2Cg-bN-NKb"/>
+                            <constraint firstAttribute="bottom" secondItem="bpu-gi-GqP" secondAttribute="bottom" constant="16" id="9sE-BY-tQa"/>
                             <constraint firstAttribute="height" priority="999" constant="128" id="AXF-OK-QXJ"/>
-                            <constraint firstItem="bpu-gi-GqP" firstAttribute="leading" secondItem="FJl-UF-Rzt" secondAttribute="leading" constant="8" id="GRD-CW-stF"/>
-                            <constraint firstAttribute="trailing" secondItem="bpu-gi-GqP" secondAttribute="trailing" constant="8" id="Guc-7V-qIk"/>
+                            <constraint firstItem="bpu-gi-GqP" firstAttribute="leading" secondItem="FJl-UF-Rzt" secondAttribute="leading" constant="16" id="GRD-CW-stF"/>
+                            <constraint firstAttribute="trailing" secondItem="bpu-gi-GqP" secondAttribute="trailing" constant="16" id="Guc-7V-qIk"/>
                         </constraints>
                         <userDefinedRuntimeAttributes>
                             <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">

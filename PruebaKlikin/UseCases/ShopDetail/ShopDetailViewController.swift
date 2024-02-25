@@ -35,6 +35,7 @@ class ShopDetailViewController: UIViewController {
 
     configure()
     configureTableView()
+    setupGestureRecognizer()
   }
 
   private func configure() {
@@ -46,6 +47,19 @@ class ShopDetailViewController: UIViewController {
     tableView.register(MapCell.nib, forCellReuseIdentifier: MapCell.identifier)
     tableView.register(InfoCell.nib, forCellReuseIdentifier: InfoCell.identifier)
     tableView.register(ShopDescriptionCell.nib, forCellReuseIdentifier: ShopDescriptionCell.identifier)
+  }
+
+  private func setupGestureRecognizer() {
+    let swipeLeft = UISwipeGestureRecognizer(target: self, action: #selector(respondToSwipeGesture))
+    swipeLeft.direction = .right
+    self.view.addGestureRecognizer(swipeLeft)
+  }
+
+  @objc func respondToSwipeGesture(gesture: UIGestureRecognizer) {
+    guard let swipeGesture = gesture as? UISwipeGestureRecognizer,
+          case .right = swipeGesture.direction else { return }
+
+    CustomNavigationController.instance.dismissVC(animated: true)
   }
 
   @IBAction func buttonBackPressed(_ sender: Any) {

@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22684"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -64,50 +64,48 @@
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="topRoundedBorders" value="YES"/>
                                 </userDefinedRuntimeAttributes>
                             </view>
-                            <stackView opaque="NO" contentMode="scaleToFill" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="v4S-Dg-EtB">
-                                <rect key="frame" x="8" y="46" width="352" height="74"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ehc-wa-dOq" customClass="CIImageView" customModule="CustomUIKitItems">
+                                <rect key="frame" x="8" y="46" width="74" height="74"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="ehc-wa-dOq" secondAttribute="height" multiplier="1:1" id="9Yd-S4-glk"/>
+                                    <constraint firstAttribute="height" priority="999" constant="74" id="F4U-cG-bf3"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="6"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="g92-iS-UhY">
+                                <rect key="frame" x="90" y="46" width="270" height="42.666666666666657"/>
                                 <subviews>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ehc-wa-dOq" customClass="CIImageView" customModule="CustomUIKitItems">
-                                        <rect key="frame" x="0.0" y="0.0" width="74" height="74"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" secondItem="ehc-wa-dOq" secondAttribute="height" multiplier="1:1" id="9Yd-S4-glk"/>
-                                        </constraints>
-                                        <userDefinedRuntimeAttributes>
-                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                                <real key="value" value="6"/>
-                                            </userDefinedRuntimeAttribute>
-                                        </userDefinedRuntimeAttributes>
-                                    </imageView>
-                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="g92-iS-UhY">
-                                        <rect key="frame" x="86" y="0.0" width="266" height="74"/>
-                                        <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aOX-VH-By0">
-                                                <rect key="frame" x="0.0" y="0.0" width="43.333333333333336" height="20.333333333333332"/>
-                                                <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
-                                                <color key="textColor" name="black100"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pqx-yu-oV7">
-                                                <rect key="frame" x="0.0" y="22.333333333333325" width="41.333333333333336" height="51.666666666666657"/>
-                                                <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
-                                                <color key="textColor" name="black100"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                        </subviews>
-                                    </stackView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="Label" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aOX-VH-By0">
+                                        <rect key="frame" x="0.0" y="0.0" width="43.333333333333336" height="20.333333333333332"/>
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                                        <color key="textColor" name="black100"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pqx-yu-oV7">
+                                        <rect key="frame" x="0.0" y="22.333333333333329" width="41.333333333333336" height="20.333333333333329"/>
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                        <color key="textColor" name="black100"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
                                 </subviews>
                             </stackView>
                         </subviews>
                         <color key="backgroundColor" name="white100"/>
                         <constraints>
+                            <constraint firstItem="g92-iS-UhY" firstAttribute="leading" secondItem="ehc-wa-dOq" secondAttribute="trailing" constant="8" id="82x-4h-2Sy"/>
                             <constraint firstItem="jft-a3-pkm" firstAttribute="leading" secondItem="cZj-ap-baT" secondAttribute="leading" id="8HY-c6-VAw"/>
-                            <constraint firstItem="v4S-Dg-EtB" firstAttribute="leading" secondItem="cZj-ap-baT" secondAttribute="leading" constant="8" id="BfA-oZ-xBG"/>
+                            <constraint firstItem="ehc-wa-dOq" firstAttribute="top" secondItem="jft-a3-pkm" secondAttribute="bottom" constant="8" id="HIW-QY-5WN"/>
                             <constraint firstItem="jft-a3-pkm" firstAttribute="top" secondItem="cZj-ap-baT" secondAttribute="top" id="S6W-e9-Rnu"/>
-                            <constraint firstAttribute="bottom" secondItem="v4S-Dg-EtB" secondAttribute="bottom" constant="8" id="Sox-zt-srj"/>
-                            <constraint firstAttribute="trailing" secondItem="v4S-Dg-EtB" secondAttribute="trailing" constant="8" id="Wqg-5M-Os4"/>
-                            <constraint firstAttribute="height" priority="999" constant="128" id="hDR-nI-3mJ"/>
+                            <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="g92-iS-UhY" secondAttribute="bottom" constant="8" id="aIT-3A-KTT"/>
+                            <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="ehc-wa-dOq" secondAttribute="bottom" constant="8" id="azA-nd-TBw"/>
                             <constraint firstAttribute="trailing" secondItem="jft-a3-pkm" secondAttribute="trailing" id="lG5-Lk-7nn"/>
-                            <constraint firstItem="v4S-Dg-EtB" firstAttribute="top" secondItem="jft-a3-pkm" secondAttribute="bottom" constant="8" id="qWM-Zj-Dpm"/>
+                            <constraint firstAttribute="trailing" secondItem="g92-iS-UhY" secondAttribute="trailing" constant="8" id="qYM-gp-YhJ"/>
+                            <constraint firstItem="g92-iS-UhY" firstAttribute="top" secondItem="jft-a3-pkm" secondAttribute="bottom" constant="8" id="qZk-sJ-icG"/>
+                            <constraint firstItem="ehc-wa-dOq" firstAttribute="leading" secondItem="cZj-ap-baT" secondAttribute="leading" constant="8" id="wat-wG-f4O"/>
                         </constraints>
                         <userDefinedRuntimeAttributes>
                             <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">

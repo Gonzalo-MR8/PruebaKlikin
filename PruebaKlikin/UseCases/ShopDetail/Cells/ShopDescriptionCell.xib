@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22684"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -18,10 +18,10 @@
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="l5G-mh-C24" customClass="CIView" customModule="CustomUIKitItems">
-                        <rect key="frame" x="16" y="54" width="368" height="110"/>
+                        <rect key="frame" x="16" y="52.333333333333336" width="368" height="111.66666666666666"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ino-pC-T89">
-                                <rect key="frame" x="16" y="15.999999999999998" width="336" height="20.333333333333329"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ino-pC-T89">
+                                <rect key="frame" x="16" y="15.999999999999991" width="336" height="20.333333333333329"/>
                                 <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
                                 <color key="textColor" name="black100"/>
                                 <nil key="highlightedColor"/>
@@ -33,7 +33,6 @@
                             <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="ino-pC-T89" secondAttribute="bottom" constant="16" id="9V5-do-DFf"/>
                             <constraint firstAttribute="trailing" secondItem="ino-pC-T89" secondAttribute="trailing" constant="16" id="FUL-HD-MXc"/>
                             <constraint firstItem="ino-pC-T89" firstAttribute="top" secondItem="l5G-mh-C24" secondAttribute="top" constant="16" id="j4F-bZ-B20"/>
-                            <constraint firstAttribute="height" priority="999" constant="110" id="oIY-fV-6li"/>
                         </constraints>
                         <userDefinedRuntimeAttributes>
                             <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
@@ -42,7 +41,7 @@
                         </userDefinedRuntimeAttributes>
                     </view>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sobre el comercio" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pBo-PW-m5s">
-                        <rect key="frame" x="16" y="16" width="368" height="22"/>
+                        <rect key="frame" x="16" y="15.999999999999998" width="368" height="20.333333333333329"/>
                         <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
                         <color key="textColor" name="black100"/>
                         <nil key="highlightedColor"/>

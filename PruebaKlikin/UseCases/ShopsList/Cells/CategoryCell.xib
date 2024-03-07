@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22684"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -20,7 +20,7 @@
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zUr-Om-LfS" customClass="CIView" customModule="CustomUIKitItems">
                         <rect key="frame" x="8" y="16" width="144" height="34"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="A1M-Ps-1BF">
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="A1M-Ps-1BF">
                                 <rect key="frame" x="8" y="4" width="128" height="26"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="EES_white" translatesAutoresizingMaskIntoConstraints="NO" id="gLf-AZ-4bq">
@@ -31,7 +31,7 @@
                                         </constraints>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Categoria 1" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="H1Z-fd-hdx">
-                                        <rect key="frame" x="26" y="0.0" width="102" height="26"/>
+                                        <rect key="frame" x="30" y="0.0" width="98" height="26"/>
                                         <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
                                         <color key="textColor" name="orange100"/>
                                         <nil key="highlightedColor"/>
@@ -41,6 +41,7 @@
                         </subviews>
                         <color key="backgroundColor" name="white100"/>
                         <constraints>
+                            <constraint firstAttribute="height" priority="999" constant="34" id="BP0-mY-5Na"/>
                             <constraint firstItem="A1M-Ps-1BF" firstAttribute="leading" secondItem="zUr-Om-LfS" secondAttribute="leading" constant="8" id="FRV-45-gUc"/>
                             <constraint firstAttribute="trailing" secondItem="A1M-Ps-1BF" secondAttribute="trailing" constant="8" id="ZWZ-gM-gzw"/>
                             <constraint firstItem="A1M-Ps-1BF" firstAttribute="top" secondItem="zUr-Om-LfS" secondAttribute="top" constant="4" id="uIB-8B-EK1"/>

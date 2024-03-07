@@ -17,9 +17,6 @@ class ShopsListViewController: UIViewController {
 
   private let kCategories: [Category] = [.gasStation, .food, .leisure, .beauty, .directSales, .electricStation, .shopping]
 
-  private let kCollectionViewCellWidth  = 174
-  private let kCollectionViewCellHeight = 66
-
   private var viewModel: ShopsListViewModel!
 
   override func viewDidLoad() {
@@ -59,6 +56,10 @@ class ShopsListViewController: UIViewController {
   private func configureTableAndCollectionViews() {
     collectionView.register(CategoryCell.nib, forCellWithReuseIdentifier: CategoryCell.identifier)
     tableView.register(ShopCell.nib, forCellReuseIdentifier: ShopCell.identifier)
+
+    if let collectionViewLayout = collectionView.collectionViewLayout as? UICollectionViewFlowLayout {
+      collectionViewLayout.estimatedItemSize = UICollectionViewFlowLayout.automaticSize
+    }
   }
 
   private func manageDeepLink(shop: Shop) {
@@ -96,14 +97,6 @@ extension ShopsListViewController: UICollectionViewDelegate {
       collectionView.reloadData()
       labelNumberOfShops.text = viewModel.getShops().count.description
     }
-}
-
-// MARK: - UICollectionViewDelegateFlowLayout
-
-extension ShopsListViewController: UICollectionViewDelegateFlowLayout {
-  func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-    CGSize(width: kCollectionViewCellWidth, height: kCollectionViewCellHeight)
-  }
 }
 
 // MARK: - UITableViewDataSource

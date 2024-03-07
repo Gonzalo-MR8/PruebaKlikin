@@ -13,5 +13,9 @@ class ShopDescriptionCell: UITableViewCell {
 
   func configure(description: String) {
     labelDescription.text = description
+
+    if description.isEmpty {
+      self.isHidden = true
+    }
   }
 }
